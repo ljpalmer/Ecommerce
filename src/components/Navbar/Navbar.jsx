@@ -1,5 +1,5 @@
-import Form from "../Form/Form";
 import Categorias from "./Categorias/Categorias";
+import CartWidget from "../CartWidget/CartWidget";
 
 export default function Navbar() {
   return ( 
@@ -10,9 +10,9 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <Categorias/>
-            <Form busqueda={"Buscar Categorias"}/>           
+            <Categorias/>         
           </div>
+            <CartWidget/>
         </div>
       </nav>
   )
