@@ -1,9 +1,15 @@
 import Categorias from "./Categorias/Categorias";
 import CartWidget from "../CartWidget/CartWidget";
+import BotonDarkMode from "./BotonDarkMode/BotonDarkMode";
+
+//Context
+import { useDarkModeContext } from "../../context/DarkModeContext";
 
 export default function Navbar() {
+  const {darkMode} = useDarkModeContext();
+
   return ( 
-        <nav className="navbar navbar-expand-lg bg-primary">
+        <nav className={`navbar navbar-expand-lg bg-primary ${darkMode ? 'bg-dark' : 'bg-primary'}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Mercado Perú</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,6 +19,7 @@ export default function Navbar() {
             <Categorias/>         
           </div>
             <CartWidget/>
+            <BotonDarkMode />
         </div>
       </nav>
   )

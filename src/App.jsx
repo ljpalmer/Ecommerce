@@ -4,21 +4,24 @@ import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CartContainer from './components/CartContainer/CartContainer';
+//Router DOM
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import ItemCount from './components/ItemCount/ItemCount';
+//Context, para tener alcance a la variable solo provider, si va querer consultar valor entonces se importa tambien contexto
+import { DarkModeProvider } from './context/DarkModeContext';
 
 const App = () => {  
   return (
     <>       
       <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer/>} />          
-          <Route path='/cart' element={<CartContainer/>} />          
-          <Route path='/producto/:id' element={<ItemDetailContainer />} />          
-          <Route path='/categoria/:categoria' element={<ItemListContainer/>} />          
-        </Routes>
-        {/* <ItemCount stock={15}/> */}
+        <DarkModeProvider>
+          <Navbar/>
+          <Routes>
+            <Route path='/' element={<ItemListContainer/>} />          
+            <Route path='/cart' element={<CartContainer/>} />          
+            <Route path='/producto/:id' element={<ItemDetailContainer />} />          
+            <Route path='/categoria/:categoria' element={<ItemListContainer/>} />          
+          </Routes>        
+        </DarkModeProvider>
       </BrowserRouter>      
     </>
   );

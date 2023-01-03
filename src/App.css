@@ -27,6 +27,17 @@ img {
   justify-content: center;
 }
 
+.darkMode{
+  background-color: black;
+  color: gainsboro;
+
+}
+.cardBodyDark {
+  background-color: hsl(0, 0%, 33%);
+  margin-bottom: 3px;
+  text-align: center;
+}
+
 .cartWidget {
   position: relative;
   right: 3%;
