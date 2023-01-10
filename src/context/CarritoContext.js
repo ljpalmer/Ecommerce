@@ -3,7 +3,7 @@ import {useContext, useState, createContext} from "react";
 const CarritoContext = createContext();
 export const useCarritoContext = () => useContext(CarritoContext);
 
-const CarritoProvider = (props) => {
+export const CarritoProvider = (props) => {
     const [carrito, setCarrito] = useState([]);
     // Ver Cantidad, agregar productos, eliminar productos vaciar el carrito,
     // finalizar compra, buscar producto
@@ -13,18 +13,48 @@ const CarritoProvider = (props) => {
     }
 
     const addItem = (producto, cantidad) => {
-        if (isInCart(producto.id)) {
-            const indice = carrito.findIndex(pro => producto.id === producto);
-            const aux = [...carrito];
-            aux[indice].cant = cantidad;
-            setCarrito(aux);
+        if(isInCart(producto.id)) {
+            const indice = carrito.findIndex(prod => prod.id === producto.id)
+            const aux = [...carrito]
+            aux[indice].cant = cantidad
+            setCarrito(aux)
         } else {
-            //No existe
             const nuevoProducto = {
                 ...producto,
-                cant: cantidad
+                cant : cantidad
             }
+            /*const aux = carrito
+            aux.push(nuevoProducto)
+            setCarrito(aux)*/
+            setCarrito([...carrito,nuevoProducto])
         }
     }
+
+    const emptyCart = () => {
+        setCarrito([])
+    }
+
+    const removeItem = (id) => {
+        /*const aux = [...carrito]
+        const indice = aux.findIndex(prod => prod.id === id)
+        setCarrito(aux.splice(indice,1))*/
+        setCarrito(carrito.filter(prod => prod.id !== id))
+    }
+
+    const getItemQuantity = () => {
+        return carrito.reduce((acum,prod) => acum += prod.cant, 0)
+    }
+
+    const totalPrice = () => {
+        return carrito.reduce((acum, prod) => acum += (prod.cant * prod.precio), 0)
+    }
+
+    return (
+        <CarritoContext.Provider value={{carrito, isInCart, addItem, removeItem, emptyCart, getItemQuantity, totalPrice}}>
+            {props.children}
+        </CarritoContext.Provider>
+    )
+
+
 }
-export {CarritoContext, CarritoProvider}
+// export {CarritoContext, CarritoProvider}

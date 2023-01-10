@@ -1,10 +1,3 @@
-/* .parrafo {
-  color: blue;
-}
-
-.titulo{
-  background-color: aqua;
-} */
 .cardProducto {
   width: 18rem;
   margin: 4px;
@@ -13,6 +6,12 @@
 
 .cardBody {
   background-color: white;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.cardBodyDark {
+  background-color: hsl(0, 0%, 33%);
   margin-bottom: 3px;
   text-align: center;
 }
@@ -27,20 +26,8 @@ img {
   justify-content: center;
 }
 
-.darkMode{
-  background-color: black;
-  color: gainsboro;
-
-}
-.cardBodyDark {
-  background-color: hsl(0, 0%, 33%);
-  margin-bottom: 3px;
-  text-align: center;
-}
-
 .cartWidget {
-  position: relative;
-  right: 3%;
+  margin-right: 40px;
   color:white;
 }
 
@@ -53,7 +40,34 @@ img {
   left: 15%;
 }
 
+.darkMode {
+  background-color:black;
+  color:gainsboro;
+}
+
 .itemDetail {
-  max-width: 540px;
+  max-width: 40%;
   margin-top: 20px;
+}
+
+.imgBody {
+  display:block;
+  margin:auto;
+  max-height: 100%;
+}
+
+.cartContainer {
+  margin-top:3%;
+  margin-left: 26.5%;
+}
+
+.divButtons button{
+  margin:4px;
+}
+
+@media (max-width:991px) {
+  .cartWidget {
+      color:white;
+      margin-bottom: 10px;
+  }
 }
