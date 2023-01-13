@@ -2,10 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto} from '../../assets/firebase';
 import { useCarritoContext } from "../../context/CarritoContext";
+import { toast } from 'react-toastify';
 
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
-
+// const delay = ms => new Promise(
+//     resolve => setTimeout(resolve, ms)
+//   );
 
 const Checkout = () => {
     const {totalPrice, carrito, emptyCart} = useCarritoContext();
@@ -19,7 +20,7 @@ const Checkout = () => {
 
         const aux = [...carrito];
         if(aux.length>0){ //Contiene Items el Carrito 
-            if(cliente.email != cliente.email2){
+            if(cliente.email !== cliente.email2){
                 toast.error(`Los correos ingresados deben de coincidir.`, {
                     position: toast.POSITION.TOP_RIGHT
                 });
@@ -42,10 +43,10 @@ const Checkout = () => {
         
                 createOrdenCompra(cliente,totalPrice(), new Date().toISOString()).then(ordenCompra => {
                     getOrdenCompra(ordenCompra.id).then(item => {
-                        toast.success(`¡Muchas gracias por su compra, su orden es ${item.id}`)
-                        emptyCart()
-                        e.target.reset()
-                        navigate("/")
+                        toast.success(`¡Muchas gracias por su compra, su orden es ${item.id}`);
+                        emptyCart();
+                        e.target.reset();                         
+                        navigate("/");
                     }).catch(error => {
                         toast.error("Su orden no pudo ser generada, intente de nuevo.");
                         console.error(error);
@@ -90,7 +91,6 @@ const Checkout = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Finalizar Compra</button>
             </form>
-            <ToastContainer />
         </div>        
     );
 }

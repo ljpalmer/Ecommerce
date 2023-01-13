@@ -10,7 +10,7 @@ const ItemDetail = ({item}) => {
     const onAdd = (contador) => {
         addItem(item, contador)
     }   
-
+    console.log(item);
     return (
         <div className='row g-0'>
             <div className='col-md-4 mt-2 mb-2'>

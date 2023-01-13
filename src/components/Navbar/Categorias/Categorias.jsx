@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useDarkModeContext } from "../../context/DarkModeContext";
+import {useDarkModeContext} from '../../../context/DarkModeContext'
 
 const Categorias = () => {
-  const {darkMode} = useDarkModeContext()
+  const {darkMode} = useDarkModeContext();
     return (
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-link">

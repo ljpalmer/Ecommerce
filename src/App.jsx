@@ -23,8 +23,9 @@ const App = () => {
             <Route path='/categoria/:categoria' element={<ItemListContainer/>} />          
             <Route path='/checkout' element={<Checkout/>}/>
           </Routes>        
-        </DarkModeProvider>
-      </BrowserRouter>      
+        </DarkModeProvider>        
+      </BrowserRouter>
+            
     </>
   );
 }

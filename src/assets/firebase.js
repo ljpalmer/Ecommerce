@@ -16,12 +16,11 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
 //CRUD PRODUCTOS
-
+//Valido para carga de registros a firestore database
 const cargarBDD = async () => {
     const promise = await fetch('./json/videojuegos.json');
     const productos = await promise.json();
-    productos.forEach(async (prod) => {       
-        console.log(prod); 
+    productos.forEach(async (prod) => {               
         await addDoc(collection(db, "productos"), {
             nombre: prod.nombre,
             marca: prod.marca,            
@@ -36,17 +35,17 @@ const cargarBDD = async () => {
 };
 
 const getProductos = async() => {
-    const productos = await getDocs(collection(db, "productos"))
-    const items = productos.docs.map(prod => {
+    const productos = await getDocs(collection(db, "productos"));    
+    const items = productos.docs.map(prod => {        
         return {...prod.data(), id: prod.id}
-    })
+    })    
     return items
 }
 
 const getProducto =  async (id) => {
-    const producto = await getDoc(doc(db, "productos", id))
-    const item = {...producto.data(), id: producto.id}
-    return item
+    const producto = await getDoc(doc(db, "productos", id))    
+    const item = {...producto.data(), id: producto.id};     
+    return item;
 }
 // 1 o 0
 const updateProducto = async (id, info) => {
