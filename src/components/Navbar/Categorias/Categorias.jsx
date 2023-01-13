@@ -8,16 +8,16 @@ const Categorias = () => {
           <button className='btn btn-secondary'><Link className="nav-link" to={"/"}>Home</Link></button>
         </li>
         <li className="nav-link">
-          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Laptops"}>Laptops</Link></button>
+          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Aventura"}>Aventura</Link></button>
         </li>
         <li className="nav-link">
-          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Celulares"}>Celulares</Link></button>
+          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Deportes"}>Deportes</Link></button>
         </li>
         <li className="nav-link">
-          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Televisores"}>Televisores</Link></button>
+          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Peleas"}>Peleas</Link></button>
         </li>
         <li className="nav-link">
-          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Perifericos"}>Periféricos</Link></button>
+          <button className="btn btn-secondary"><Link className='nav-link' to={"/categoria/Disparos"}>Disparos</Link></button>
         </li>
       </ul>
     );

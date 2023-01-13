@@ -1,0 +1,233 @@
+[
+    {        
+        "id": 1,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Mario Bros Deluxe",
+        "marca": "NINTENDO",
+        "descripcion": "¡Únete a Mario, Luigi y a sus amigos en cualquier momento y en cualquier lugar en una divertida aventura para uno o varios jugadores! Disfruta de dos aventuras de desplazamiento lateral con hasta tres amigos* e intenta salvar al Reino Champiñón. Incluye los juegos New Super Mario Bros. U y New Super Luigi U, ¡ambos incluyen a Nabbit y a Toadette como personajes jugables!",
+        "precio": 199.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FMarioDeluxe.png?alt=media&token=083d898f-695a-4409-8fb1-b13c9fa039b4"
+    },
+    {        
+        "id": 2,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Crash Team Racing",
+        "marca": "NINTENDO",
+        "descripcion": "¡Crash vuelve al volante! Prepárate para desmelenarte con Crash™ Team Racing Nitro-Fueled. La auténtica experiencia de CTR y mucho más contenido remasterizado al máximo de revoluciones.",
+        "precio": 189.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FCTRNitroFueled.png?alt=media&token=af1de0f6-17e6-419d-b583-17ebb70458ad"
+    },
+    {        
+        "id": 3,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Legend of Zelda",
+        "marca": "NINTENDO",
+        "descripcion": "Olvida todo lo que sabes acerca de los juegos de la serie The Legend of Zelda. Explora y descubre un mundo lleno de aventuras en The Legend of Zelda: Breath of the Wild, una nueva saga que rompe los esquemas de la aclamada serie. Viaja a través de praderas y bosques, y alcanza cimas de montañas mientras descubres cómo cayó en la ruina el reino de Hyrule en esta emocionante aventura al aire libre. ",
+        "precio": 210.00,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FLegendOfZelda.png?alt=media&token=1a85afad-e21f-40a7-aafb-4ca4f4b923ad"
+    },
+    {
+        "id": 4,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Donkey Kong Country",
+        "marca": "NINTENDO",
+        "descripcion": "El juego de aventura de Donkey Kong más aclamado por la crítica llega como un explosivo barril a la consola Nintendo Switch™ y trae consigo un racimo de nuevas funciones. Aventúrate a través de islas cargadas de acción utilizando los clásicos Kongs como en el juego original, ¡o dale sabor a la historia jugando como Funky Kong en el nuevo modo Funky!",
+        "precio": 189.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FDonkeyKongCountry.png?alt=media&token=f813c3ee-d7a9-4a45-9a73-8f2c81901619"
+    },
+    {        
+        "id": 5,
+        "idCategoria": 2,
+        "nombreCategoria": "Deportes",
+        "nombre": "Mario Strikers Battle League",
+        "marca": "NINTENDO",
+        "descripcion": "Les presentamos strike, un deporte de 5 contra 5 inspirado en el fútbol donde no hay reglas, ¡así que haz lo que tengas que hacer para conseguir la victoria! Juega con determinación e intenta anotar el mayor número de goles al superar a tus enemigos con entradas y realizando hiperchutazos que incrementarán tu puntuación.",
+        "precio": 190.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FMarioStrikers.png?alt=media&token=ae801452-f408-4b05-928b-3190abda365d"
+    },
+    {        
+        "id": 6,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Pokemon Mistery Dungeon",
+        "marca": "NINTENDO",
+        "descripcion": "¿Qué harías si despiertas como un Pokémon? ¡Podrás conocer y reclutar a más de 400 Pokémon en esta aventura de mazmorras dentro de su mundo! Crea un equipo de rescate para enfrentarte a mazmorras en constante cambio y planea estratégicamente cada uno de tus movimientos mientras te aventuras para asegurarte que el mundo Pokémon es un lugar más seguro… y descubrir tu verdadero propósito en el camino.",
+        "precio": 159.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FPokmenMisteryDungeon.png?alt=media&token=e4ad6353-288a-4b20-977b-8a4caf02066f"
+    },
+    {
+        "id": 7,
+        "idCategoria": 3,
+        "nombreCategoria": "Peleas",
+        "nombre": "Super Smash Bros. Ultimate",
+        "marca": "NINTENDO",
+        "descripcion": "¡Un auténtico duelo de titanes de los videojuegos que podrás jugar cuando quieras y donde quieras! Lanza a tus rivales del escenario usando uno de los nuevos personajes como Simon Belmont o King K. Rool que se unen a Inkling, Ridley y a todos los combatientes presentes en la historia de Super Smash Bros. Disfruta de la velocidad mejorada y combate en los nuevos escenarios basados en las series de Castlevania, Super Mario Odyssey y otras.",
+        "precio": 219.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FSmash.png?alt=media&token=aa0b2145-6251-45a9-9b90-81510a637fb9"
+    },
+    {
+        "id": 8,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Yoshis Crafted World",
+        "marca": "NINTENDO",
+        "descripcion": "Salta a una nueva aventura de Yoshi en un mundo creado con objetos de la vida cotidiana, ¡como cajas y vasos de papel! Como Yoshi, saltarás alto, tragarás a tus enemigos y emprenderás una cacería para encontrar diferentes objetos coleccionables. Por otra parte, los niveles pueden jugarse al revés, ¡brindando nuevas perspectivas y nuevas maneras de ubicar algunos de los objetos ocultos con más astucia!",
+        "precio": 169.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fswitch%2FYoshiCraftedWorld.png?alt=media&token=d18b9b63-b7c1-4fe0-afb0-516af4a6b735"
+    },
+    {
+        "id": 9,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Uncharted 4 A Thief End",
+        "marca": "PLAYSTATION",
+        "descripcion": "Muchos años después de su última aventura, el cazafortunas jubilado, Nathan Drake, es obligado a regresar al mundo de ladrones. Con riesgos mucho más personales, Drake comienza un viaje por el mundo en busca de una conspiración histórica detrás de un tesoro de pirata legendario. Su mayor aventura pondrá a prueba sus límites físicos, su poder de decisión, y por último aquello que es capaz de sacrificar para salvar a las personas que ama.",
+        "precio": 159.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fps4%2FUncharted_4.png?alt=media&token=42c38503-fd92-43a2-8782-751688f22b67"
+    },
+    {
+        "id": 10,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Resident Evil 2",
+        "marca": "PLAYSTATION",
+        "descripcion": "Resident Evil 2, cuyo título original en Japón es Biohazard 2, es un videojuego de disparos en tercera persona perteneciente al género de terror, desarrollado y publicado por Capcom, se trata de una nueva versión del videojuego homónimo de 1998. El jugador controla al oficial de policía novato Leon S. Kennedy y a la estudiante universitaria Claire Redfield mientras intentan escapar de Raccoon City durante un brote de zombis y monstruos. El título fue confirmado por Capcom el año 2015, aunque su lanzamiento oficial no fue anunciado hasta la conferencia de prensa de Sony de la E3 2018, para el mes de enero del año 2019.",
+        "precio": 149.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fps4%2FResidentEvil_2.png?alt=media&token=d30c937e-771d-4f27-b850-2aa90ea374d0"
+    },
+    {
+        "id": 11,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "God of War 4",
+        "marca": "PLAYSTATION",
+        "descripcion": "De la mano del Santa Monica Studio y el director creativo Cory Barlog, llega un nuevo comienzo para uno de los íconos más importantes de la industria de los juegos. Kratos, que vive como un hombre lejos de la sombra de los dioses, deberá adaptarse a tierras desconocidas, amenazas inesperadas y una segunda oportunidad para oficiar de padre. Junto a su hijo Atreus se adentrarán en la salvaje tierra nórdica y lucharán para completar una misión profundamente personal.",
+        "precio": 169.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fps4%2FGodOfWar4.png?alt=media&token=ef3b7a94-69c6-4863-ab48-afa26ef1aa46"
+    },
+    {
+        "id": 12,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Dark Siders II Deathinitive Edition",
+        "marca": "PLAYSTATION",
+        "descripcion": "Conviértete en un terror que todos temen pero del que nadie puede escapar. Despertada por el fin del mundo, la Muerte, el más temido de los cuatro jinetes, se embarca en una misión para limpiar el nombre de su hermano. ¡La Muerte vive!",
+        "precio": 189.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fps4%2FDarkSiders_2.png?alt=media&token=e3115041-fa9a-47b5-a985-d75d65dfe7c6"
+    },
+    {
+        "id": 13,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Bloodborne",
+        "marca": "PLAYSTATION",
+        "descripcion": "Enfrenta tus pesadillas mientras buscas respuestas en la antigua ciudad de Yharnam, ahora maldecida por una enfermedad endémica que se propaga por las calles como un fuego arrasador. El peligro, la muerte y la locura merodean en cada esquina de este mundo oscuro y espantoso, y debes descubrir sus secretos más oscuros para poder sobrevivir.",
+        "precio": 169.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fps4%2FBloodborne.png?alt=media&token=f882c769-ea9d-4a67-a062-099c3c5a6df6"
+    },
+    {
+        "id": 14,
+        "idCategoria": 4,
+        "nombreCategoria": "Disparos",
+        "nombre": "Battlefield 4",
+        "marca": "PLAYSTATION",
+        "descripcion": "Consigue más para ser más y suscríbete a Battlefield 4™ Edición Premium. Esta es la experiencia Battlefield 4 definitiva con un modo multijugador en equipo sin igual, entornos de destrucción dinámica y un épico combate de vehículos. Battlefield 4™ Edición Premium es la experiencia de la guerra total e incluye el juego Battlefield 4 además de una suscripción a Battlefield 4 Premium que proporciona cinco packs digitales temáticos de expansión con montones de contenido nuevo, incluyendo 20 mapas, modos de juego y muchas armas y vehículos. La colección añade más diversidad, y va desde la acción anfibia de Naval Strike y los majestuosos niveles de China Rising al combate urbano de infantería de Dragon's Teeth y la guerra de alta tecnología y el paisaje ártico de Final Stand. Además, cuatro mapas de los favoritos de los fans de Battlefield 3 revisados en Second Assault.",
+        "precio": 219.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fps4%2FBattleField_4.png?alt=media&token=373c5763-1519-4404-943f-a2681a8c37c2"
+    },
+    {
+        "id": 15,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Assassins Creed Valhalla",
+        "marca": "XBOX",
+        "descripcion": "Conviértete en un terror que todos temen pero del que nadie puede escapar. Despertada por el fin del mundo, la Muerte, el más temido de los cuatro jinetes, se embarca en una misión para limpiar el nombre de su hermano. ¡La Muerte vive!",
+        "precio": 149.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fxbox%2FAssassinCreedValhalla.png?alt=media&token=dba8f6fe-b033-47b4-bc1a-8cfe0e8d9207"
+    },
+    {
+        "id": 16,
+        "idCategoria": 4,
+        "nombreCategoria": "Disparos",
+        "nombre": "Battlefield 1",
+        "marca": "XBOX",
+        "descripcion": "Battlefield 1 es un videojuego de disparos y acción bélica en primera persona. El título fue desarrollado por EA Digital Illusions CE y distribuido por Electronic Arts para PlayStation 4, Xbox One y Microsoft Windows. Es el décimo quinto juego de la serie Battlefield y el primer título de la serie que se ambienta en la Primera Guerra Mundial por Electronic Arts desde Wings of Glory en 1994. El juego fue confirmado en mayo de 2016 por Electronic Arts.1​ Su lanzamiento ocurrió el 21 de octubre de 2016.",
+        "precio": 168.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fxbox%2FBattleField_1.png?alt=media&token=4321aaab-bc0a-4220-a2e8-8eb567d50ecd"
+    },
+    {
+        "id": 17,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Farcry 6",
+        "marca": "XBOX",
+        "descripcion": "La historia se desarrolla en Yara, una isla ficticia del Caribe, bajo un régimen comunista aparentemente inspirado en el gobierno de Fidel Castro, quien ejerció el poder de forma dictatorial en Cuba y anuncia videojuego inspirado en Cuba, un mundo detenido en el tiempo. Por tal motivo el equipo de Ubisoft viajó a Cuba para entrevistarse con antiguos guerrilleros que participaron en el bando revolucionario.",
+        "precio": 149.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fxbox%2FFarcry_6.png?alt=media&token=bf6296c2-8137-4d43-bfeb-788c9996b9ae"
+    },
+    {
+        "id": 18,
+        "idCategoria": 1,
+        "nombreCategoria": "Aventura",
+        "nombre": "Resident Evil 3",
+        "marca": "XBOX",
+        "descripcion": "Resident Evil 3, cuyo título original en Japón es Biohazard RE: 3, es un videojuego de terror, acción y aventura de disparos en tercera persona desarrollado y publicado por Capcom, se trata de una nueva versión del videojuego homónimo de 1999 y sigue a los personajes de Jill Valentine y Carlos Oliveira intentando sobrevivir a un apocalipsis zombi en Raccoon City mientras son perseguidos por Nemesis, la nueva e inteligente arma biológica de Umbrella.",
+        "precio": 139.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fxbox%2FResidentEvil_3.png?alt=media&token=ecb42de6-b687-454a-a83a-c0c88de00cf0"
+    },
+    {
+        "id": 19,
+        "idCategoria": 4,
+        "nombreCategoria": "Disparos",
+        "nombre": "The Surge",
+        "marca": "XBOX",
+        "descripcion": "The Surge está diseñado en la misma línea desafiante del estilo de juego de rol de la serie de videojuegos Souls. La jugabilidad involucra a jugadores que usan un exoesqueleto para luchar contra los enemigos. El exoesqueleto se puede personalizar a través del videojuego mediante actualizaciones modulares. El combate permite a los jugadores apuntar a diferentes partes del cuerpo de los enemigos, así como utilizar movimientos finales.",
+        "precio": 189.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fxbox%2FTheSurge.png?alt=media&token=4a6434b2-1a9a-45a3-9afb-05590af0d028"
+    },
+    {
+        "id": 20,
+        "idCategoria": 4,
+        "nombreCategoria": "Disparos",
+        "nombre": "Titanfall",
+        "marca": "XBOX",
+        "descripcion": "Titanfall, producido por uno de los cocreadores de Call of Duty y otros desarrolladores clave de esa franquicia, es un universo completamente nuevo que combina lo pequeño con lo gigante y el hombre con las máquinas.",
+        "precio": 189.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fxbox%2FTitanFall.png?alt=media&token=c71c5187-6152-4bcb-9c15-9bc08fb19209"
+    },
+    {
+        "id": 21,
+        "idCategoria": 4,
+        "nombreCategoria": "Disparos",
+        "nombre": "Titanfall 2",
+        "marca": "XBOX",
+        "descripcion": "Titanfall 2 es un videojuego de acción en primera persona estilo mecha, que ha sido desarrollado por Respawn Entertainment y está distribuido por EA Games para Microsoft Windows, PlayStation 4 y Xbox One. Es la secuela de Titanfall y fue lanzado a la venta el 28 de octubre de 2016.",
+        "precio": 189.90,
+        "stock": 30,
+        "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-2022.appspot.com/o/videojuegos%2Fxbox%2FTitanFall_2.png?alt=media&token=8713348e-81b9-479c-b222-ee604f531d4b"
+    }
+]

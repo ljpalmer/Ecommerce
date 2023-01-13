@@ -1,5 +1,5 @@
 const consultarBDD = async (ruta) => {
-    // const url = './json/productos.json';
+    // const url = './json/videojuegos.json';
     const response = await fetch(ruta);
     const productos = await response.json();
     return productos;

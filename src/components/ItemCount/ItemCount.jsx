@@ -1,29 +1,24 @@
-import React from 'react';
 import {useState} from 'react';
+import { useDarkModeContext } from '../../context/DarkModeContext';
+const ItemCount = ({inicial, stock, onAdd}) => {
+    const {darkMode} = useDarkModeContext()
 
-const ItemCount = ({stock}) => {
-    //Parte Logica
-    const [contador, setContador] = useState(1);    /*
-       const boton = document.getElementById("boton1");
-       console.log(boton); NO SE PUEDE LLAMAR ANTES DE CREAR EL BOTON
-       */
-    const sumar = () => {
-        if (contador < stock) {
-            setContador(contador + 1)
-        }
-    };
+    const [contador, setContador] = useState(inicial);
+    
+    const sumar = () => contador < stock && setContador(contador + 1)
 
-    const restar = () => {
-        if (contador > 1) {
-            setContador(contador - 1)
-        }
-    };
+    const restar = () => contador > 1 && setContador(contador - 1)
+    
+    const agregarAlCarrito = () => onAdd(contador)
+
     return (
-        <div>
-            <button className='btn btn-dark' onClick={() => sumar()}>+</button>
-            {contador}
-            <button className='btn btn-light' onClick={() => restar()}>-</button>
-            <button>Agregar al carrito</button>
+        <div className='row col-12'>
+            <button onClick={restar} className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} col-2`}><i className="fas fa-minus"></i></button>
+            <div className='col-1 text-center'>
+                {contador}
+            </div>                    
+            <button onClick={sumar} className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} col-2`}><i className="fas fa-plus"></i></button>
+            <button className={`btn ${darkMode ? 'btn-primary' : 'btn-dark'} col-2`} onClick={agregarAlCarrito}><i className="fas fa-cart-plus"></i></button>
         </div>
     );
 }

@@ -1,32 +1,29 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/ItemList';
 import {consultarBDD} from '../../assets/funciones.js'
-import { useParams } from 'react-router-dom';
-
+import { cargarBDD } from '../../assets/firebase';
 // import consultarBDD from '../../assets/funciones.js' -> otra forma se comenta ambas son correctas
 const ItemListContainer = () => {  
-    //CONSULTA LA BD, REALIZA LA LLAMADA ASINCRONICA
+    //Consulta a la BD, realizamos llamada asincrona
     const [productos, setProductos] = useState([]);
     const {categoria} = useParams();
-
     useEffect(() => {
         if(categoria){
-            consultarBDD('../json/productos.json').then(products => {
-                const productList = products.filter(prod => prod.stock>0).filter(prod => prod.nombreCategoria===categoria)
-                // const cardProductos = ItemList({productList});
-                // setProductos(cardProductos);                
-                setProductos(productList)
+            consultarBDD('../json/videojuegos.json').then(products => {
+                const productList = products.filter(prod => prod.stock>0)
+                                            .filter(prod => prod.nombreCategoria===categoria);
+                setProductos(productList);
             });
         }else{
-            consultarBDD('./json/productos.json').then(products => {
-                const productList = products.filter(prod => prod.stock>0)
-                // const cardProductos = ItemList({productList});
-                // setProductos(cardProductos);
+            consultarBDD('./json/videojuegos.json').then(products => {
+                const productList = products.filter(prod => prod.stock>0)   
                 setProductos(productList)
             });
-        }
-        
+        }        
+        //Una vez cargado en la base de datos de firestore lo desactivamos
+        // cargarBDD().then(productos => console.log(productos));
+
     }, [categoria]);
 
 
