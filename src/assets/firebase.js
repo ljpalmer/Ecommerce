@@ -40,26 +40,22 @@ const getProductos = async() => {
         return {...prod.data(), id: prod.id}
     })    
     return items
-}
-
+};
 const getProducto =  async (id) => {
     const producto = await getDoc(doc(db, "productos", id))    
     const item = {...producto.data(), id: producto.id};     
     return item;
-}
-// 1 o 0
+};
 const updateProducto = async (id, info) => {
     const estado = await updateDoc(doc(db,"productos", id), info)
     return estado
-}
-
+};
 const deleteProducto = async(id) =>{
     const estado = await deleteDoc(doc(db, "productos", id))
     return estado
-}
+};
 
-//CREATE Y READ ORDENES COMPRA
-
+//CREATE AND READ "ORDENES COMPRA"
 const createOrdenCompra = async (cliente, preTotal, fecha ) => {
     const ordenCompra = await addDoc(collection(db, "ordenCompra"),{
         nombreCompleto: cliente.nombre,

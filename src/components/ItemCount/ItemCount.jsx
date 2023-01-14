@@ -18,7 +18,7 @@ const ItemCount = ({inicial, stock, onAdd}) => {
                 {contador}
             </div>                    
             <button onClick={sumar} className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} col-2`}><i className="fas fa-plus"></i></button>
-            <button className={`btn ${darkMode ? 'btn-primary' : 'btn-dark'} col-2`} onClick={agregarAlCarrito}><i className="fas fa-cart-plus"></i></button>
+            {stock !==0 ? <button className={`btn ${darkMode ? 'btn-primary' : 'btn-dark'} col-2`} onClick={agregarAlCarrito}><i className="fas fa-cart-plus"></i></button> : '' }
         </div>
     );
 }

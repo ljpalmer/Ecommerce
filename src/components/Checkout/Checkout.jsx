@@ -4,10 +4,13 @@ import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto} from '.
 import { useCarritoContext } from "../../context/CarritoContext";
 import { toast } from 'react-toastify';
 
-// const delay = ms => new Promise(
-//     resolve => setTimeout(resolve, ms)
-//   );
-
+const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
 const Checkout = () => {
     const {totalPrice, carrito, emptyCart} = useCarritoContext();
     const datosFormulario = React.useRef();
@@ -17,14 +20,14 @@ const Checkout = () => {
         e.preventDefault();
         const datForm = new FormData(datosFormulario.current);
         const cliente = Object.fromEntries(datForm);
-
+        const emailCliente = cliente.email;
         const aux = [...carrito];
         if(aux.length>0){ //Contiene Items el Carrito 
             if(cliente.email !== cliente.email2){
                 toast.error(`Los correos ingresados deben de coincidir.`, {
                     position: toast.POSITION.TOP_RIGHT
                 });
-            }else{
+            }else if (validateEmail(emailCliente)) {            
                 aux.forEach(prodCarrito => {
                     getProducto(prodCarrito.id).then(prodBDD => {
                         if(prodBDD.stock >= prodCarrito.cant) {
@@ -53,6 +56,10 @@ const Checkout = () => {
                     })
                     
                 })
+            }else{
+                toast.error(`No es un correo electronico válido`, {
+                    position: toast.POSITION.TOP_RIGHT
+                });                
             }
         }
         else{
